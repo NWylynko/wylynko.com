@@ -1,3 +1,7 @@
+html {
+  --red: rgb(255, 97, 97);
+}
+
 body {
   text-align: center;
   background: rgb(0, 15, 34);
@@ -9,56 +13,64 @@ body {
   color: white;
   font-family: 'Righteous', cursive;
   margin: 0;
+  font-size: calc(10px + 4vh);
 }
 
-p {
-  font-size: calc(20px);
+h1 {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--red);
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.container {
+  display: inline-flex;
+  flex-direction: row;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 30px;
-  text-decoration: none;
+.container div {
   border-radius: 5px;
+  margin: 40px;
+  padding: 40px;
   min-width: 200px;
+  transition: background-color 150ms;
 }
 
-li a:hover {
-  background-color: rgb(255, 97, 97);
+.container div a {
+  color: white;
+  text-decoration: none;
 }
 
-li a:focus {
-  background-color: rgb(255, 97, 97);
+.container div p {
+  font-size: 20px;
 }
 
-@media screen and (orientation: landscape) {
-  ul {
-    display: flex;
-    flex-direction: row;
-  }
+
+.container div:hover, .container div:focus, .container div:active {
+  background-color: var(--red);
+}
+
+@media screen and (orientation:portrait) and (max-width: 700px) {
 
   body {
-    font-size: calc(10px + 4vmin);
+    font-size: calc(10px + 5vh);
   }
 
-  p {
-    max-width: 260px;
+  .container {
+    flex-direction: column;
+  }
+
+  .container div {
+    margin: 20px;
+    padding: 20px;
+    min-width: 100px;
+  }
+
+  .nick {
+    text-shadow: 2.5vmin 2.5vmin var(--red);
   }
 
 }
 
-@media screen and (orientation:portrait) {
-  body {
-    font-size: calc(10px + 8vmin);
-  }
-
+.nick {
+  text-shadow: 0.5vmin 0.5vmin var(--red);
 }
