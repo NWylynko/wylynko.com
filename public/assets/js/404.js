@@ -3,7 +3,7 @@ import search from './search.js';
 const page = window.location.href.replace("https://wylynko.com/", "");
 
 const pages = [
-  "nick", "ella"
+  "nick", "ella", "brad"
 ]
 
 const difference = pages.map(
