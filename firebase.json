@@ -20,7 +20,12 @@
       },
       {
         "source": "/ella",
-        "destination": "https://instagram.com/wylynko",
+        "destination": "https://ella.wylynko.com",
+        "type": 301
+      },
+      {
+        "source": "/brad",
+        "destination": "https://brad.wylynko.com",
         "type": 301
       }
     ]
