@@ -6,14 +6,7 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ],
-    "redirects": [
-      {
+    "redirects": [{
         "source": "/nick",
         "destination": "https://nick.wylynko.com/",
         "type": 301
