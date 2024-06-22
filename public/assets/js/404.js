@@ -3,7 +3,7 @@ import search from './search.js';
 const page = window.location.href.replace("https://wylynko.com/", "");
 
 const pages = [
-  "nick", "ella", "brad"
+  "nick", "august", "brad"
 ]
 
 const difference = pages.map(
@@ -14,10 +14,10 @@ const difference = pages.map(
 
 var obj = {};
 for (var i = 0; i < pages.length; i++) {
-   obj[pages[i]] = difference[i];
+  obj[pages[i]] = difference[i];
 }
 
-let sorted = Object.keys(obj).sort(function(a,b){return obj[a]-obj[b]})
+let sorted = Object.keys(obj).sort(function (a, b) { return obj[a] - obj[b] })
 
 let most_likely = sorted[0]
 
